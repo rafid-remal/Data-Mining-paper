@@ -1,26 +1,26 @@
 # Malware Detection Using Data Mining Techniques
 
 <p align="center">
-```
-`<strong>A Comparative Study of Classification Algorithms for
+
+<strong>A Comparative Study of Classification Algorithms for
 Multi-Class Malware Detection`</strong>
 </p>
-```
+
 <p align="center">
-```
-`<img src="https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge" alt="Cybersecurity">
-`<img src="https://img.shields.io/badge/Discipline-Data%20Mining-blue?style=for-the-badge" alt="Data Mining">
-`<img src="https://img.shields.io/badge/Models-3-orange?style=for-the-badge" alt="Models">
-`<img src="https://img.shields.io/badge/Dataset-Microsoft%20BIG%202015-green?style=for-the-badge" alt="Dataset">
+
+<img src="https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge" alt="Cybersecurity">
+<img src="https://img.shields.io/badge/Discipline-Data%20Mining-blue?style=for-the-badge" alt="Data Mining">
+<img src="https://img.shields.io/badge/Models-3-orange?style=for-the-badge" alt="Models">
+<img src="https://img.shields.io/badge/Dataset-Microsoft%20BIG%202015-green?style=for-the-badge" alt="Dataset">
 </p>
-```
+
 <p align="center">
-```
-`<em>End-to-end data mining pipeline for classifying malware
+
+<em>End-to-end data mining pipeline for classifying malware
 families using feature selection, class balancing, and supervised
-machine learning.`</em>
+machine learning.</em>
 </p>
-```
+
 
 ------------------------------------------------------------------------
 
@@ -450,12 +450,12 @@ The project references foundational and supporting work including:
 
 ## 👥 Authors
 
-### Kazi Golam Sazid Hasan
+### Rafid Shabab Remal Patwary
 
 Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
 
-### Rafid Shabab Remal Patwary
+### Kazi Golam Sazid Hasan
 
 Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
@@ -514,8 +514,8 @@ representation.
 ------------------------------------------------------------------------
 
 <p align="center">
-```
-`<strong>Malware Detection • Data Mining • Machine Learning •
-Cybersecurity`</strong>
+
+<strong>Malware Detection • Data Mining • Machine Learning •
+Cybersecurity</strong>
 </p>
-```
+
