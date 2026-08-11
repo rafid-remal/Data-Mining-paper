@@ -1,30 +1,24 @@
 # Malware Detection Using Data Mining Techniques
 
-```{=html}
 <p align="center">
 ```
-`<strong>`{=html}A Comparative Study of Classification Algorithms for
-Multi-Class Malware Detection`</strong>`{=html}
-```{=html}
+`<strong>A Comparative Study of Classification Algorithms for
+Multi-Class Malware Detection`</strong>
 </p>
 ```
-```{=html}
 <p align="center">
 ```
-`<img src="https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge" alt="Cybersecurity">`{=html}
-`<img src="https://img.shields.io/badge/Discipline-Data%20Mining-blue?style=for-the-badge" alt="Data Mining">`{=html}
-`<img src="https://img.shields.io/badge/Models-3-orange?style=for-the-badge" alt="Models">`{=html}
-`<img src="https://img.shields.io/badge/Dataset-Microsoft%20BIG%202015-green?style=for-the-badge" alt="Dataset">`{=html}
-```{=html}
+`<img src="https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge" alt="Cybersecurity">
+`<img src="https://img.shields.io/badge/Discipline-Data%20Mining-blue?style=for-the-badge" alt="Data Mining">
+`<img src="https://img.shields.io/badge/Models-3-orange?style=for-the-badge" alt="Models">
+`<img src="https://img.shields.io/badge/Dataset-Microsoft%20BIG%202015-green?style=for-the-badge" alt="Dataset">
 </p>
 ```
-```{=html}
 <p align="center">
 ```
-`<em>`{=html}End-to-end data mining pipeline for classifying malware
+`<em>End-to-end data mining pipeline for classifying malware
 families using feature selection, class balancing, and supervised
-machine learning.`</em>`{=html}
-```{=html}
+machine learning.`</em>
 </p>
 ```
 
@@ -39,9 +33,9 @@ learning-based approach to multi-class malware classification**.
 
 The study compares three supervised classification algorithms:
 
--   **Decision Tree**
--   **Random Forest**
--   **Gaussian Naive Bayes**
+- **Decision Tree**
+- **Random Forest**
+- **Gaussian Naive Bayes**
 
 The experiments use a pre-processed version of the **Microsoft Malware
 Classification Challenge (BIG 2015)** dataset containing numeric
@@ -71,12 +65,12 @@ according to the project results.
 
 The project was designed around three primary objectives:
 
--   Build an end-to-end data mining pipeline for malware-family
-    classification.
--   Compare the performance of Decision Tree, Random Forest, and Naive
-    Bayes classifiers.
--   Identify which selected numerical features contribute most to
-    malware classification.
+- Build an end-to-end data mining pipeline for malware-family
+  classification.
+- Compare the performance of Decision Tree, Random Forest, and Naive
+  Bayes classifiers.
+- Identify which selected numerical features contribute most to malware
+  classification.
 
 ### Scope
 
@@ -156,22 +150,22 @@ The overall workflow can be represented as:
 A Decision Tree was used as an interpretable baseline classifier. The
 implemented configuration includes:
 
--   `criterion = gini`
--   `max_depth = 15`
--   `min_samples_split = 5`
--   `min_samples_leaf = 2`
--   `random_state = 42`
+- `criterion = gini`
+- `max_depth = 15`
+- `min_samples_split = 5`
+- `min_samples_leaf = 2`
+- `random_state = 42`
 
 ### 2. Random Forest
 
 Random Forest was evaluated as the primary ensemble classifier. The
 configuration includes:
 
--   `n_estimators = 200`
--   `max_features = sqrt`
--   `max_depth = None`
--   `random_state = 42`
--   Parallel processing enabled with `n_jobs = -1`
+- `n_estimators = 200`
+- `max_features = sqrt`
+- `max_depth = None`
+- `random_state = 42`
+- Parallel processing enabled with `n_jobs = -1`
 
 Random Forest also provided feature-importance estimates using mean
 decrease in impurity.
@@ -180,7 +174,7 @@ decrease in impurity.
 
 Gaussian Naive Bayes was included as a probabilistic baseline:
 
--   `var_smoothing = 1e-9`
+- `var_smoothing = 1e-9`
 
 Its comparatively lower performance provides a useful contrast against
 tree-based models.
@@ -189,11 +183,13 @@ tree-based models.
 
 ## 📈 Experimental Results
 
-  Model                   Accuracy      ROC-AUC Performance
-  ------------------- ------------ ------------ -------------
-  **Random Forest**     **99.05%**   **0.9996** 🏆 Best
-  **Decision Tree**     **97.39%**   **0.9667** Strong
-  **Naive Bayes**       **64.06%**   **0.9311** Baseline
+Model Accuracy ROC-AUC Performance
+
+------------------------------------------------------------------------
+
+**Random Forest** **99.05%** **0.9996** 🏆 Best **Decision Tree**
+**97.39%** **0.9667** Strong **Naive Bayes** **64.06%** **0.9311**
+Baseline
 
 ### Key Findings
 
@@ -202,16 +198,16 @@ classifiers.
 
 The results indicate that:
 
--   Ensemble tree methods are highly effective for the selected malware
-    feature representation.
--   Feature selection can reduce the dimensionality of the input while
-    retaining strong predictive performance.
--   SMOTE helps address severe class imbalance in the training data.
--   Naive Bayes performed considerably worse, suggesting that its
-    assumptions do not adequately capture the statistical relationships
-    present in the selected features.
--   A relatively small subset of numerical features contributed strongly
-    to the Random Forest decisions.
+- Ensemble tree methods are highly effective for the selected malware
+  feature representation.
+- Feature selection can reduce the dimensionality of the input while
+  retaining strong predictive performance.
+- SMOTE helps address severe class imbalance in the training data.
+- Naive Bayes performed considerably worse, suggesting that its
+  assumptions do not adequately capture the statistical relationships
+  present in the selected features.
+- A relatively small subset of numerical features contributed strongly
+  to the Random Forest decisions.
 
 ------------------------------------------------------------------------
 
@@ -293,7 +289,7 @@ Classification Challenge (BIG 2015)** dataset.
 
 > Kaggle --- Microsoft Malware Classification Challenge (BIG 2015)
 
-https://www.kaggle.com/c/malwareclassification
+<https://www.kaggle.com/c/malwareclassification>
 
 The paper describes the working dataset as containing **68 numeric
 features**, from which the pipeline selects the top 30 features through
@@ -307,16 +303,15 @@ feature selection.
 
 ## 🛠️ Technology Stack
 
-  Technology             Purpose
-  ---------------------- ---------------------------------------------------
-  **Python**             Core implementation
-  **Pandas**             Data loading and manipulation
-  **NumPy**              Numerical computation
-  **Scikit-learn**       Feature selection, preprocessing, models, metrics
-  **Imbalanced-learn**   SMOTE class balancing
-  **Matplotlib**         Visualization
-  **Seaborn**            Confusion-matrix visualization
-  **Kaggle**             Dataset / notebook environment
+Technology Purpose
+
+------------------------------------------------------------------------
+
+**Python** Core implementation **Pandas** Data loading and manipulation
+**NumPy** Numerical computation **Scikit-learn** Feature selection,
+preprocessing, models, metrics **Imbalanced-learn** SMOTE class
+balancing **Matplotlib** Visualization **Seaborn** Confusion-matrix
+visualization **Kaggle** Dataset / notebook environment
 
 ------------------------------------------------------------------------
 
@@ -420,16 +415,15 @@ Random Forest performance.
 
 Potential extensions of this work include:
 
--   Evaluating the pipeline on newer malware datasets such as EMBER.
--   Comparing against gradient-boosting methods such as LightGBM or
-    XGBoost.
--   Investigating deep learning approaches.
--   Combining static and dynamic malware features.
--   Performing cross-dataset validation.
--   Evaluating robustness against adversarially modified malware
-    samples.
--   Investigating explainable AI techniques for malware classification.
--   Testing the pipeline on previously unseen malware families.
+- Evaluating the pipeline on newer malware datasets such as EMBER.
+- Comparing against gradient-boosting methods such as LightGBM or
+  XGBoost.
+- Investigating deep learning approaches.
+- Combining static and dynamic malware features.
+- Performing cross-dataset validation.
+- Evaluating robustness against adversarially modified malware samples.
+- Investigating explainable AI techniques for malware classification.
+- Testing the pipeline on previously unseen malware families.
 
 ------------------------------------------------------------------------
 
@@ -458,24 +452,24 @@ The project references foundational and supporting work including:
 
 ### Kazi Golam Sazid Hasan
 
-Department of Computer Science and Engineering\
+Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
 
 ### Rafid Shabab Remal Patwary
 
-Department of Computer Science and Engineering\
+Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
 
 ### Yousuf Nobin
 
-Department of Computer Science and Engineering\
+Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
 
 ### Supervisor
 
-**Dr. Ohidujjaman**\
-Associate Professor\
-Department of Computer Science and Engineering\
+**Dr. Ohidujjaman**  
+Associate Professor  
+Department of Computer Science and Engineering  
 United International University, Dhaka, Bangladesh
 
 ------------------------------------------------------------------------
@@ -519,11 +513,9 @@ representation.
 
 ------------------------------------------------------------------------
 
-```{=html}
 <p align="center">
 ```
-`<strong>`{=html}Malware Detection • Data Mining • Machine Learning •
-Cybersecurity`</strong>`{=html}
-```{=html}
+`<strong>Malware Detection • Data Mining • Machine Learning •
+Cybersecurity`</strong>
 </p>
 ```
